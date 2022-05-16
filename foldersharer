@@ -4,7 +4,7 @@ import os
 import transmitter
 import receiver
 
-class Share:
+class Sharer:
     def __init__(self): 
         self.run()
     
@@ -79,7 +79,7 @@ class Share:
         return msg
         
 
-share = Share()
+share = Sharer()
 
 
 
