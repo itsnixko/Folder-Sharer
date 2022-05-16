@@ -1,4 +1,4 @@
-from project import filesharer
+from project import folderhsharer
 
 if __name__ == "__main__":
-    filesharer.Sharer()
+    foldersharer.Sharer()
