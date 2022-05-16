@@ -15,14 +15,6 @@ class Sharer:
         else:
             self.handle_manual_input()
 
-    def check_directory(self, dir):
-        dir = dir.replace("\\", "/")
-        if not os.path.isdir(dir):
-            print("that directory does not exist")
-            return None
-        else:
-            return dir
-
 
     def handle_manual_input(self):
         mode = input("mode (r/t): ").lower()
@@ -36,7 +28,7 @@ class Sharer:
             directory = input("file directory: ").replace("\\", "/")
             self.run_transmitter(ip, directory)
 
-    # neds bit of debuggin. 
+    # needs bit of debuggin. 
     def handle_arg_input(self):
         if sys.argv[1] == '-r':
             self.run_receiver()
