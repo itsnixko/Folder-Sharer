@@ -70,8 +70,8 @@ class Sharer:
         """
         return msg
         
-
-share = Sharer()
+if __name__ == "__main__":
+    Sharer()
 
 
 
